@@ -5,14 +5,14 @@ public class Estudiante {
     private int edad;
     private double promedio;
 
-    public Estudiante(){
+    public Estudiante() {
 
     }
-    
-    public Estudiante(String nombre, int edad, double promedio){
+
+    public Estudiante(String nombre, int edad, double promedio) {
         this.nombre = nombre;
         this.edad = edad;
-        this.promedio = promedio;
+        this.promedio = promedio; 
 
     }
 
@@ -26,44 +26,45 @@ public class Estudiante {
 
     public void setEdad(int edad) {
         if (edad > 0) {
-             this.edad = edad;
-        }else{
+            this.edad = edad;
+        } else {
             System.out.println("edad no valida");
         }
-       
+
     }
 
     public int getEdad() {
         return edad;
     }
 
-     public void setPromedio(double promedio) {
-        this.promedio = promedio;
+    public void setPromedio(double promedio) {
+        if (promedio >= 0 && promedio <= 5) {
+            this.promedio = promedio;
+        } else {
+           System.out.println("fuera de rango");
+        }
     }
 
     public double getPromedio() {
         return promedio;
     }
 
-    public boolean haAprobado(){
+    public boolean haAprobado() {
         return (promedio >= 3.0);
-    
-        }
-    
 
-    public void mostrarInfo(){
+    }
+
+    public void mostrarInfo() {
         System.out.println("el estudiante: " + nombre);
         System.out.println("tiene: " + edad + " años");
         System.out.println("su promedio es: " + promedio);
-        
-         if (haAprobado()) {
+
+        if (haAprobado()) {
             System.out.println("Aprobo");
-            
-        }else{
+
+        } else {
             System.out.println("reprobo");
         }
-        
+
     }
 }
-
-    

@@ -2,7 +2,7 @@ package com.example;
 
 public class Main {
     public static void main(String[] args) {
-        Libro l1 = new Libro();
+       /*  Libro l1 = new Libro();
         l1.mostrarDetalles();
 
         Libro l2 = new Libro("Harry Potter", "J.K. Rowling");
@@ -15,10 +15,10 @@ public class Main {
         cb.depositar(1200);
         System.out.println(cb.getSaldo());
         cb.retirar(200);
-        System.out.println(cb.getSaldo());
+        System.out.println(cb.getSaldo()); */
  
 
-        Estudiante estudiante = new Estudiante("jhon", 30, 1.0);
+        Estudiante estudiante = new Estudiante("jhon", 30, 2.0);
         estudiante.mostrarInfo();
         estudiante.haAprobado();
         
