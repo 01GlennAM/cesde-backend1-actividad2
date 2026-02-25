@@ -12,7 +12,7 @@ public class Estudiante {
     public Estudiante(String nombre, int edad, double promedio) {
         this.nombre = nombre;
         this.edad = edad;
-        this.promedio = promedio; 
+        this.promedio = promedio;
 
     }
 
@@ -38,11 +38,7 @@ public class Estudiante {
     }
 
     public void setPromedio(double promedio) {
-        if (promedio >= 0 && promedio <= 5) {
-            this.promedio = promedio;
-        } else {
-           System.out.println("fuera de rango");
-        }
+        this.promedio = promedio;
     }
 
     public double getPromedio() {
@@ -67,4 +63,5 @@ public class Estudiante {
         }
 
     }
+
 }
