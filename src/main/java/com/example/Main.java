@@ -14,12 +14,13 @@ public class Main {
         CuentaBancaria cb = new CuentaBancaria("maria", 500);
         cb.depositar(1200);
         System.out.println(cb.getSaldo());
-        cb.retirar(2000);
+        cb.retirar(200);
         System.out.println(cb.getSaldo());
  
 
         Estudiante estudiante = new Estudiante("jhon", 30, 1.0);
         estudiante.mostrarInfo();
+        estudiante.haAprobado();
         
 
     }

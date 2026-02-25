@@ -45,19 +45,25 @@ public class Estudiante {
         return promedio;
     }
 
-    public void haAprobado(){
-        if (promedio >= 3.0) {
-            System.out.println("Aprobo");
-        }else{
-            System.out.println("Reprobado");
+    public boolean haAprobado(){
+        return (promedio >= 3.0);
+    
         }
-    }
+    
 
     public void mostrarInfo(){
         System.out.println("el estudiante: " + nombre);
         System.out.println("tiene: " + edad + " años");
         System.out.println("su promedio es: " + promedio);
-        haAprobado();
+        
+         if (haAprobado()) {
+            System.out.println("Aprobo");
+            
+        }else{
+            System.out.println("reprobo");
+        }
+        
     }
-    }
+}
+
     

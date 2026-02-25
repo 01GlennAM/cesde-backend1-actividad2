@@ -7,6 +7,8 @@ public class Libro {
     
 
     public Libro(){
+        titulo = "Desconocido";
+        autor = "Anonimo";
     };
 
     public Libro(String titulo, String autor){
@@ -23,13 +25,7 @@ public class Libro {
     };
 
     public void mostrarDetalles(){
-        System.out.println("Libro: " + titulo);
-        System.out.println("Autor: " + autor);
-        System.out.println("Paginas: " + paginas);
-    }
-
+        System.out.println("Libro [titulo=" + titulo + ", autor=" + autor + ", paginas=" + paginas + "]");
         
-
-
-
+    }
 }
